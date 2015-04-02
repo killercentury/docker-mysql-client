@@ -1,3 +1,3 @@
-FROM alpine:3.1
+FROM alpine
 RUN apk add --update mysql-client && rm -rf /var/cache/apk/*
 ENTRYPOINT ["mysql"]
